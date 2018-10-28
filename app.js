@@ -54,7 +54,7 @@ app.post("/contact  ", function (req, res) {
    
   var data = {
     from: 'cal App user<postmaster@sandbox1efc7e9a2bb247e89ea29eaaa62ff931.mailgun.org>',
-    to: 'pedditarakaraviteja@gmail.com',
+    to: 'mamidisaiprakash@gmail.com',
     subject: req.body.firstname + " Sent you a message",
     text: req.body.subject
   };

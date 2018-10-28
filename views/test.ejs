@@ -1,0 +1,45 @@
+<% include header %>
+<html>
+    <body>
+<!-- A BootStrap container is used to adjust the layout of the contents based on screen size. .container uses pre-built screen sizes, while .container-fluid adjusts continously.-->
+<div class="container-fluid">
+		<!-- BootStrap grid system using one row that could have several columns (when the screen size is large enough) -->
+		<div class="row">
+			<div class="col-sm-12">
+				
+				<p>Click the button to book tickets.</p>
+				<br>
+				<!-- http://v4-alpha.getbootstrap.com/components/buttons/ -->
+				<button onclick="App.launch()" class="btn btn-lg btn-danger">Click me</button>
+				<br/>
+				<br/>
+				<aside id="clicks"></aside>
+			</div>
+			<div class="col-sm-12">
+				<span class="displayText">Name:</span>
+				<span id= "name"></span>
+				<br/>
+				<span class="displayText">Organisation:</span>
+				<span id="org"></span>
+				<br/>
+				<span class="displayText">No. of students ~</span>
+				<span id="count"> </span>
+				
+				<span class="displayText">students</span>
+				<br/>
+				<span id="displayPlace">&nbsp;</span>
+				<div class="displayExploreButtons">
+					<button onclick="App.exploreHtml()" class="btn btn-lg btn-primary" id="btnExploreHtml">Explore the HTML</button>
+					<button onclick="App.exploreCode()" class="btn btn-lg btn-primary" id="btnExploreCode">Explore the Code</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!-- /container -->
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="W04.js"></script>
+</body>
+
+</html>
+<% include footer %>

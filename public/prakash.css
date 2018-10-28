@@ -54,12 +54,11 @@ padding-bottom:13px;
 .a1:hover,.a1:active {font-size: 150%;}	
 img {
 	
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 		position: absolute;
-		
+		right: 0;	
 }
-
 
  .nav{
 	text-align: right;

@@ -177,30 +177,7 @@ function addImage(icount) {
   document.getElementById("image" + icount).src = "bearcat.png"
 }
 
-function displayExploreButtons() {
-  $(".displayExploreButtons").css('display', 'block')  //overwrites display: hidden to make it visible 
-}
 
-function exploreHtml() {
-  alert("Would you like to learn more? \n\n Run the app in Chrome.\n\n" +
-    "Right-click on the page, and click Inspect. Click on the Elements tab.\n\n" +
-    "Hit CTRL-F and search for displayPlace to see the new image elements you added to the page.\n")
-}
-
-function exploreCode() {
-  alert("Would you like explore the running code? \n\n Run the app in Chrome.\n\n" +
-    "Right-click on the page, and click Inspect. Click on the top-level Sources tab.\n\n" +
-    "In the window on the left, click on the .js file.\n\n" +
-    "In the window in the center, click on the line number of the getFirstName() call to set a breakpoint.\n\n" +
-    "Click on it again to remove the breakpoint, and one more time to turn it back on.\n\n" +
-    "Up on the web page, click the main button to launch the \n\n" +
-    "Execution of the code will stop on your breakpoint.\n\n" +
-    "Hit F11 to step into the getFirstName() function.\n" +
-    "Hit F10 to step over the next function call.\n\n" +
-    "As you hit F11 and step through your code, the values of local variables appear beside your code - very helpful in debugging.\n\n" +
-    "Caution: Hitting F11 in VS Code will make your top-level menu disapper. Hit F11 again to bring it back.\n"
-  )
-}
 
 function rememberClicks() {
   if (localStorage.getItem("clicks")) { // use getter

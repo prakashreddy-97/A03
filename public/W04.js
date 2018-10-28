@@ -170,7 +170,6 @@ function addImage(icount) {
   var imageElement = document.createElement("img")
   imageElement.id = "image" + icount
   imageElement.class = "picture"
-  imageElement.style.maxWidth = "50px"
   var displayElement = document.getElementById("displayPlace")
   displayElement.appendChild(imageElement)
   document.getElementById("image" + icount).src = "bearcat.png"
